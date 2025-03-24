@@ -7,7 +7,8 @@ namespace OXGame
     {
         //
         private String playerMarker = "X";
-
+        //
+        int counter = 0;
         //
         public Form1()
         {
@@ -40,6 +41,8 @@ namespace OXGame
             button.Text = playerMarker;
             playerMarker = playerMarker == "X" ? "O" : "X";
             label2.Text = playerMarker;
+            //
+            counter++;
             //
             checkWinner();
             //
